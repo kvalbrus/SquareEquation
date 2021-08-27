@@ -1,3 +1,7 @@
+#ifndef SQ_EQUATION_H
+#define SQ_EQUATION_H
+
+
 int QuadraticEquation(double a, double b, double c, double* x1, double* x2);
 
 int LinearEquation(double b, double c, double* x);
@@ -17,3 +21,5 @@ enum RootsCount
     ONE_ROOT = 1,
     TWO_ROOTS = 2,    
 };
+
+#endif //SQ_EQUATION_H

@@ -67,6 +67,7 @@ bool IsNumbersMatch(double num1, double num2)
     return (fabs(num1 - num2) < EPSILON);
 }
 
+// isnan() - ctype
 bool IsNAN(double num)
 {
     return (num != num);

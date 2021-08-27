@@ -11,7 +11,7 @@ void TestMessage(int test, int roots, double x1, double x1Ref, double x2, double
 
 int main() 
 {
-    int roots = 0, failedTest = RunTestEquation();
+    int failedTest = RunTestEquation();
 
     printf("%d test is FAILED\n", failedTest);
 }
