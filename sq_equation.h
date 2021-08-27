@@ -28,7 +28,16 @@ Calculates the discriminant
 \param[in] c Coefficient c
 /return The discriminant
 */
+
 double Discriminant(double a, double b, double c);
+
+/*!
+Prints the result of calculating the equation
+\param[in] roots Number of roots
+\param[in] x1 First root
+\param[in] x2 Second root
+*/
+void PrintiningResponse(int roots, double x1, double x2);
 
 /*!
 Checks if two numbers are close
