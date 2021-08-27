@@ -3,6 +3,7 @@
 
 #include "sq_equation.h"
 
+
 int QuadraticEquation(double a, double b, double c, double* x1, double* x2)
 {
     assert(x1 != NULL);
@@ -16,7 +17,6 @@ int QuadraticEquation(double a, double b, double c, double* x1, double* x2)
     {
         double discriminant = Discriminant(a, b, c);
 
-        // discr check
         if (IsNumbersMatch(discriminant, 0)) 
         {
             *x1 = -b / (2 * a);
@@ -36,7 +36,7 @@ int QuadraticEquation(double a, double b, double c, double* x1, double* x2)
         }
     }
 }
- // bx + c = 0  x = -c/b   
+
 int LinearEquation(double b, double c, double* x)
 {
     if (IsNumbersMatch(b, 0))
@@ -67,7 +67,6 @@ bool IsNumbersMatch(double num1, double num2)
     return (fabs(num1 - num2) < EPSILON);
 }
 
-// isnan() - ctype
 bool IsNAN(double num)
 {
     return (num != num);

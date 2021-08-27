@@ -3,10 +3,34 @@
 
 #include "sq_equation.h"
 
+/*!
+Runs tests with different parameters 
+\return Number of Failed Tests 
+*/
 int RunTestEquation();
 
+/*!
+Performs a test with the specified equation parameters
+\param[in] test Test number
+\param[in] a Coefficient a
+\param[in] b Coefficient b
+\param[in] c Coefficient c
+\param[in] rootsRef Number of expected roots
+\param[in] x1Ref Expected first root of the equation
+\param[in] x2Ref Expected second root of the equation
+\return 0 if test fails, 1 if test succeeds
+*/
 int TestEquation(int test, double a, double b, double c, int rootsRef, double x1Ref, double x2Ref);
 
+/*!
+Displays a message about a failed test
+\param[in] test Test number
+\param[in] roots Number of roots
+\param[in] x1 The first root of the equation resulting from the calculation
+\param[in] x1Ref The first root of the equation, which is supposed to be obtained
+\param[in] x2 The second root of the equation resulting from the calculation
+\param[in] x2Ref The second root of the equation, which is supposed to be obtained
+*/
 void TestMessage(int test, int roots, double x1, double x1Ref, double x2, double x2Ref);
 
 int main() 
