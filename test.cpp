@@ -70,7 +70,7 @@ int TestEquation(int test, double a, double b, double c, int rootsRef, double x1
     
     if (roots == 0)
     {
-        if (!(IsNAN(x1) && IsNAN(x1Ref) && IsNAN(x2) && IsNAN(x2Ref))) 
+        if (!(isnan(x1) && isnan(x1Ref) && isnan(x2) && isnan(x2Ref))) 
         {
             TestMessage(test, roots, x1, x1Ref, x2, x2Ref);
             return 0;
@@ -79,7 +79,7 @@ int TestEquation(int test, double a, double b, double c, int rootsRef, double x1
     }
     if (roots == 1)
     {
-        if (!IsNumbersMatch(x1, x1Ref) || !IsNAN(x2Ref))
+        if (!IsNumbersMatch(x1, x1Ref) || !isnan(x2Ref))
         {
             TestMessage(test, roots, x1, x1Ref, x2, x2Ref);
             return 0;

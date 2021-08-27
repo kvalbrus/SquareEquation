@@ -28,7 +28,6 @@ Calculates the discriminant
 \param[in] c Coefficient c
 /return The discriminant
 */
-
 double Discriminant(double a, double b, double c);
 
 /*!
@@ -46,13 +45,6 @@ Checks if two numbers are close
 /return True if the numbers are almost the same or the same. False if the numbers are not the same
 */
 bool IsNumbersMatch(double num1, double num2);
-
-/*!
-Calculates whether a number is NUN
-\param[in] num number
-/return True if the numbers is NUN. False if the numbers is not NUN
-*/
-bool IsNAN(double num);
 
 const double EPSILON = 0.00000001;
 
