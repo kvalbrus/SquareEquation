@@ -15,13 +15,14 @@ int main()
     
     if (scanf("%lf %lf %lf", &a, &b, &c) == 3)
     {
-        int roots = QuadraticEquation(a, b, c, &x1, &x2);
+        RootsCount roots = SolvesQuadraticEquation(a, b, c, &x1, &x2);
 
-        PrintiningResponse(roots, x1, x2);
+        PrintResponse(roots, x1, x2);
     } 
     else 
     {
         printf("Enter only numbers!\n");
-    } 
+    }
+     
     return 0;
 }
