@@ -8,6 +8,10 @@ int QuadraticEquation(double a, double b, double c, double* x1, double* x2)
 {
     assert(x1 != NULL);
     assert(x2 != NULL);
+    assert(isfinite(a));
+    assert(isfinite(b));
+    assert(isfinite(c));
+    
 
     if (IsNumbersMatch(a, 0)) 
     {
@@ -40,6 +44,8 @@ int QuadraticEquation(double a, double b, double c, double* x1, double* x2)
 int LinearEquation(double b, double c, double* x)
 {
     assert(x != NULL);
+    assert(isfinite(b));
+    assert(isfinite(c));
 
     if (IsNumbersMatch(b, 0))
     {
@@ -82,10 +88,17 @@ void PrintiningResponse(int roots, double x1, double x2)
 
 double Discriminant(double a, double b, double c)
 {
+    assert(isfinite(a));
+    assert(isfinite(b));
+    assert(isfinite(c));
+
     return ((b * b) - (4 * a * c));
 }
 
 bool IsNumbersMatch(double num1, double num2)
 {
+    assert(isfinite(num1));
+    assert(isfinite(num2));
+
     return (fabs(num1 - num2) < EPSILON);
 }
